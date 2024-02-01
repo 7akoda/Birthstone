@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/style.css"> 
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="<%= selectedCity === 'Banff' ? 'selected' : '' %>"><a href="/Banff">Banff </a></li>
+                <li class="<%= selectedCity === 'Calabogie' ? 'selected' : '' %>"><a href="/Calabogie">Calabogie </a></li>
+                <li class="<%= selectedCity === 'Canmore' ? 'selected' : '' %>"><a href="/Canmore">Canmore </a></li>
+                <li class="<%= selectedCity === 'Castlegar' ? 'selected' : '' %>"><a href="/Castlegar">Castlegar </a></li>
+                <li class="<%= selectedCity === 'Chinese-Mountains' ? 'selected' : '' %>"><a href="/Chinese-Mountains">Chinese Mountains </a></li>
+                <li class="<%= selectedCity === 'Duncan' ? 'selected' : '' %>"><a href="/Duncan">Duncan Bouldering </a></li>
+                <li class="<%= selectedCity === 'Eardley-Escarpment' ? 'selected' : '' %>"><a href="/Eardley-Escarpment">Eardley Escarpment </a></li>
+                <li class="<%= selectedCity === 'Peggy\'s Cove' ? 'selected' : '' %>"><a href="/Peggys-Cove">Peggy's Cove </a></li>
+                <li class="<%= selectedCity === 'Halton' ? 'selected' : '' %>"><a href="/Halton">Halton Region </a></li>
+                <li class="<%= selectedCity === 'Jasper' ? 'selected' : '' %>"><a href="/Jasper">Jasper National Park </a></li>
+                <li class="<%= selectedCity === 'Kananaskis' ? 'selected' : '' %>"><a href="/Kananaskis">Kananaskis </a></li>
+                <li class="<%= selectedCity === 'Kelowna' ? 'selected' : '' %>"><a href="/Kelowna">Kelowna Boulderfields </a></li>
+                <li class="<%= selectedCity === 'Nelson' ? 'selected' : '' %>"><a href="/Nelson">Nelson </a></li>
+                <li class="<%= selectedCity === 'Niagara-Glen' ? 'selected' : '' %>"><a href="/Niagara-Glen">Niagara Glen </a></li>
+                <li class="<%= selectedCity === 'Squamish' ? 'selected' : '' %>"><a href="/Squamish">Squamish </a></li>
+                <li class="<%= selectedCity === 'Skaha' ? 'selected' : '' %>"><a href="/Skaha">Skaha </a></li>
+                <li class="<%= selectedCity === 'Thunder-Bay' ? 'selected' : '' %>"><a href="/Thunder-Bay">Thunder Bay </a></li>
+                <li class="<%= selectedCity === 'Val-David' ? 'selected' : '' %>"><a href="/Val-David">Val-David </a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

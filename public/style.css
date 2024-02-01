@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Viga', sans-serif;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+   background-color: #86a397;
+   
+  }
+
+
+  .weatherInfoDate{
+    font-family: 'viga', 
+    sans-serif; 
+    font-size: 25px; 
+    text-align: center;
+    color: #361d2e;
+    position: absolute;
+    bottom: 0px;
+    opacity: 50%;
+  }
+
+  .weatherInfoContainer {
+    margin-left: 22px;
+    width: 50%;
+    display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  margin-top: 20px;
+  min-width: 750px;
+  max-width: 750px;
+  position: absolute;
+  bottom: 400px;
+  }
+
+  .weatherInfoItem {
+    text-align: center;
+    max-height: 168px;
+  min-width: 114px;
+  }
+  
+  .weatherInfoItemWind {
+    text-align: center;
+    height: 168px;
+    max-width: 250px;
+    min-width: 250px;
+  }
+
+  .weatherInfoText{
+    font-family: 'viga', 
+    sans-serif; 
+    font-size: 32px; 
+    text-align: center;
+    color: #361d2e;
+    margin: 10px;
+    text-wrap: wrap;
+    
+  }
+
+  .weatherInfoTextAddition{
+    font-family: 'viga', 
+    sans-serif; 
+    font-size: 17px; 
+    text-align: center;
+    color: #361d2e;
+    margin: -10px;
+    
+  }
+  
+  .backgroundContainer {
+    position: absolute;
+    background: url('../images/birthstonebw1.svg') center/cover no-repeat;
+    color: #cbc0ad;
+    height: 100vh;
+    width: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
+header {
+  background-color: #361d2e; 
+  padding: 4px; 
+  position: absolute;
+  top: 0;
+  width: 101.65vw;
+  
+}
+
+.navbar {
+  display: flex; 
+  justify-content: space-evenly; 
+  
+}
+
+.navbar ul li.selected a {
+  color: #e1b07e;
+  border-bottom: 2px solid #e1b07e;
+}
+
+ul {
+  list-style-type: none; 
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+  display: flex; 
+  flex-wrap: nowrap;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #cbc0ad; 
+}
+
+a:hover {
+  border-bottom: 2px solid #e1b07e;
+}
+
+.currentLocation{
+  font-family: 'viga', 
+    sans-serif; 
+    font-size: 48px; 
+    position: absolute;
+    top: 300px;
+    color: #361d2e;
+    margin: -10px;
+    
+}
+.locationDescriptionBox{
+  margin-left: 60px;
+  min-height: 200px;
+  position: absolute;
+  bottom: 645px;
+  max-width: 750px;
+  border: 7px solid;
+  border-radius: 10px;
+  border-color: #cbc0ad;
+  
+}
+
+.locationDescription{
+  margin-top: 25px;
+  margin-left: 25px;
+  max-width: 700px;
+  font-size: 22px;
+  color: #361d2e;
+  
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="300">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <script src="/script.js" defer></script>
+    <title>Birthstone
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="backgroundContainer"> 
+        <%- include('header', { pageTitle: 'Home' }) %>
+        <pre class="weatherInfoDate">Last updated: <%= weatherInfo.dateTime %></pre>
+        <pre class="currentLocation"><%= selectedCity%></pre>
+        <div class="weatherInfoContainer">
+                <div class="weatherInfoItem">
+                <img id="thermometerImg" src="<%= thermometerSrc %>" alt="Thermometer">
+                <pre class="weatherInfoText"><%= weatherInfo.Temperature%></pre>
+            </div>
+            <div class="weatherInfoItemWind">
+                <img id="windImg" src="../images/wind.svg" alt="Wind">
+                <div class="weatherInfoText">
+                    <%- weatherInfo.Wind.replace(/km\/h/g, 'km/h <br>') %>
+                </div>
+                <% if (weatherInfo.WindChill !== undefined) { %>
+                <pre class="weatherInfoTextAddition">Wind chill: <%= weatherInfo.WindChill%>°C</pre>
+                <% } %>
+            </div>
+            <div class="weatherInfoItem">
+                <img id="humidityImg" src="../images/humidity.svg" alt="Humidity">
+                <pre class="weatherInfoText"><%= weatherInfo.Humidity%></pre>
+            </div>
+    </div>
+    <div class="locationDescriptionBox">
+    <div class="locationDescription">
+        <%- weatherInfo.locationDescription %>
+      </div>
+      </div>
+    </div>
+</body>
+</html>
